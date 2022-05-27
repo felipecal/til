@@ -14,6 +14,10 @@ const languages = ['Python', 'JavaScript', 'Java', 'PHP'];
 let concatenacao = [friends,languages]
 
 console.log(`${concatenacao[0][0]} your favorite language is ${concatenacao[1][1]}.`);
+
+//Output
+
+Pedro your favorite language is JavaScript
 ```
 
 
