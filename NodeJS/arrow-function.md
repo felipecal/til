@@ -40,7 +40,7 @@ If in our function we have to pass more than 1 paramter we can do like this
 
 
 ```
-const checkBeer = (parametro, outroParametro) => {
+const checkBeer = (parameter, otherParameter) => {
     if (age >= 18 ){
         beers -1 ;
         return console.log('Você pode beber 1 cervejas');
