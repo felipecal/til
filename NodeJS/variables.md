@@ -11,7 +11,7 @@ phrase = first + ' ' + second;
 console.log(phrase);
 var phrase;
 ```
-
+If we declare one var inside of a function we can use it in all code, the same didn't happened in others (let and const) <br>
 But one big problem is that we can have more than 1 variable with the same name when we used var.
 
 <h2> Let </h2>
