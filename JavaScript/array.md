@@ -125,3 +125,30 @@ const newNames = friends.map (name => name.toLowerCase())
 
 console.log(newNames);
 ```
+<h2> Filter </h2>
+We will use the filter to find specific things within the array.
+
+```
+const friends = ['Pedro', 'Daniel', 'Stequero', 'Andrezin'];
+
+const languages = ['Python', 'JavaScript', 'Java', 'PHP'];
+
+const test = friends.filter( (friend,index) => languages[index] == 'JavaScript');
+
+console.log(test);
+```
+
+<h2> Reduce </h2>
+The reduce is used to sum values of a array.
+
+```
+const numbers = [0,1,5,4,7,9,6,3,10,15];
+
+function calc(number) {
+    const sumOfNumbers = number.reduce((sum, now) =>
+    sum + now, 0)
+    return sumOfNumbers/number.length;
+}
+
+console.log(`The average of this list is ${calc(numbers)}.`);
+```
