@@ -60,3 +60,23 @@ console.log(`The ${person.name}, has ${person.phone.length} number.\n`);
 
 person.phone.forEach(phones =>console.log(phones));
 ```
+
+<h2>Object in Obbject </h2>
+
+```
+const person = { 
+    name: "Felipe Caldas", 
+    age: "20", 
+    state: "Brasil" 
+};
+
+person.dependences = {
+    name: "Caldas", 
+    age: 21,
+    state: "Brazil",
+    languages: ["Python", "Javascript", "Java"]
+
+}
+
+console.log(person.dependences.languages);
+```
