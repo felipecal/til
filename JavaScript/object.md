@@ -29,3 +29,19 @@ console.log(person[test[0]]);
 // or
 test.forEach(object => console.log(person[object]));
 ```
+Adding and Updating New Fields in an Object
+```
+const person = { 
+    name: "Felipe Caldas", 
+    age: "20", 
+    state: "Brasil" };// a little representation of objects - name, age, state
+
+//adding
+person.email = "felipe@gmail.com";
+
+console.log(person);
+//updating
+person.email = "f@gmail.com"
+
+console.log(person);
+```
