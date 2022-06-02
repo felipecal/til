@@ -25,4 +25,7 @@ const person = {
 const test = ["name", "age", "state"]
 
 console.log(person[test[0]]);
+
+// or
+test.forEach(object => console.log(person[object]));
 ```
