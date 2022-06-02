@@ -45,3 +45,18 @@ person.email = "f@gmail.com"
 
 console.log(person);
 ```
+
+Inside of an object we can have array, numbers and other like the example below
+
+```
+const person = {
+    name: "Felipe Caldas",
+    age: 20,
+    state: "Brasil",
+    phone: ['12233213452', "12332255664"]
+};
+
+console.log(`The ${person.name}, has ${person.phone.length} number.\n`);
+
+person.phone.forEach(phones =>console.log(phones));
+```
