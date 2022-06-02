@@ -64,19 +64,18 @@ person.phone.forEach(phones =>console.log(phones));
 <h2>Object in Obbject </h2>
 
 ```
+
 const person = { 
     name: "Felipe Caldas", 
     age: "20", 
-    state: "Brasil" 
+    state: "Brasil" ,
+    dependent: [{
+        name: "Caldas", 
+        age: 21,
+        state: "Brazil",
+        languages: "trsd"
+    }]
 };
 
-person.dependences = {
-    name: "Caldas", 
-    age: 21,
-    state: "Brazil",
-    languages: ["Python", "Javascript", "Java"]
-
-}
-
-console.log(person.dependences.languages);
+console.log(person.denpendent.languages);
 ```
