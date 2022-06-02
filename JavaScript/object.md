@@ -13,3 +13,16 @@ const test = ["name", "age", "state"]
 console.log(`${person.name.substring(0,6)}'s`);
 test.forEach(info => console.log(`${info}: ${person[info]}.`))
 ```
+
+Other way to call an array with object
+
+```
+const person = { 
+    name: "Felipe Caldas", 
+    age: "20", 
+    state: "Brasil" };// a little representation of objects - name, age, state
+
+const test = ["name", "age", "state"]
+
+console.log(person[test[0]]);
+```
