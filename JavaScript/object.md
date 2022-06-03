@@ -5,8 +5,8 @@ Example 1:
 ```
 const person = { 
     name: "Felipe Caldas", 
-    age: "20", 
-    state: "Brasil" };// a little representation of objects - name, age, state
+    age: 20, 
+    state: "Brasil" };
 
 const test = ["name", "age", "state"]
 
@@ -19,8 +19,8 @@ Other way to call an array with object
 ```
 const person = { 
     name: "Felipe Caldas", 
-    age: "20", 
-    state: "Brasil" };// a little representation of objects - name, age, state
+    age: 20, 
+    state: "Brasil" };
 
 const test = ["name", "age", "state"]
 
@@ -33,8 +33,8 @@ Adding and Updating New Fields in an Object
 ```
 const person = { 
     name: "Felipe Caldas", 
-    age: "20", 
-    state: "Brasil" };// a little representation of objects - name, age, state
+    age: 20, 
+    state: "Brasil" };
 
 //adding
 person.email = "felipe@gmail.com";
@@ -67,7 +67,7 @@ person.phone.forEach(phones =>console.log(phones));
 
 const person = { 
     name: "Felipe Caldas", 
-    age: "20", 
+    age: 20, 
     state: "Brasil" ,
     dependent: [{
         name: "Caldas", 
@@ -78,4 +78,68 @@ const person = {
 };
 
 console.log(person.denpendent.languages);
+```
+
+other form to add an object in object
+
+```
+const person = { 
+    name: "Felipe Caldas", 
+    age: 20, 
+    state: "Brasil" ,
+    dependent: [{
+        name: "Caldas", 
+        age: 21,
+        state: "Brazil",
+        languages: "trsd"
+    }]
+};
+
+
+person.dependent.push({
+    name: "Carla", 
+    age: 20,
+    state: "Brazil"
+});
+
+
+
+console.log(person);
+```
+
+<h2> Object with Function </h2>
+Putting an function inside of an object
+
+```
+const person = { 
+    name: "Felipe Caldas", 
+    age: 20, 
+    state: "Brasil" ,
+    dependent: [{
+        name: "Caldas", 
+        age: 21,
+        state: "Brazil",
+        languages: [{
+            backend: "Python",
+            frontend: "html"
+        }]
+    },{
+        name: "Carla", 
+        age: 20,
+        state: "Brazil",
+        languages: "Python"
+    }],
+    changeState:function(newState){
+        person.dependent.forEach(item => 
+            item.name = newState
+        )
+        console.log("Deu bom!");
+    }
+};
+
+console.log(person.dependent);
+
+person.changeState("Fulano");
+
+console.log(person.dependent);
 ```
