@@ -1,4 +1,6 @@
-<h1 align ="center"> Import and Export a function </h1>
+<h2 align ="center"> Function </h2>
+
+<h2 align ="center"> Import and Export a function </h2>
 
 When we want to use a code in other place, we can call it a module.<br>
 So, when you have some code that can also be used in other parts of your code, files, call it a model
