@@ -1,4 +1,4 @@
-<h2 align ="center"> Function </h2>
+<h1 align ="center"> Function </h1>
 
 <h2 align ="center"> Import and Export a function </h2>
 
