@@ -197,3 +197,73 @@ person.changeState("Fulano");
 
 console.log(person.dependent);
 ```
+
+<h2> Converting Object to JSON </h2>
+To convert Object in to json in javascript we can use JSON.stringify() like this example.
+
+```
+const person = {
+    name: "Felipe Caldas",
+    age: 20,
+    state: "Brasil",
+    dependent: [{
+        name: "Caldas",
+        age: 21,
+        state: "Brazil",
+        languages: "trsd"
+    }]
+};
+
+const convertingOjbectToJSON = JSON.stringify(person);
+
+console.log(`Now we have the object person in JSON :\n ${convertingOjbectToJSON}`);
+```
+in console :
+
+```
+Now we have the object person in JSON :
+ {"name":"Felipe Caldas","age":20,"state":"Brasil","dependent":[{"name":"Caldas","age":21,"state":"Brazil","languages":"trsd"}]}
+ ```
+
+
+<h2> Converting Object to JSON and JSON to Object</h2>
+To convert JSON to Object in javascript we can use JSON.stringify() like this example.
+
+```
+//The first part we will convert an OBJECT To JSON.
+
+const person = {
+    name: "Felipe Caldas",
+    age: 20,
+    state: "Brasil",
+    dependent: [{
+        name: "Caldas",
+        age: 21,
+        state: "Brazil",
+        languages: "trsd"
+    }]
+};
+
+const convertingOjbectToJSON = JSON.stringify(person);
+
+console.log(`Now we have the object person in JSON :\n ${convertingOjbectToJSON}\n \n`);
+
+
+//NOW WE WILL CONVERT JSON TO OBJECT...
+const convertingJsonToObject = JSON.parse(convertingOjbectToJSON);
+
+console.log('Now we have the JSON person in Object :', convertingJsonToObject);
+```
+in console :
+
+```
+Now we have the object person in JSON :
+ {"name":"Felipe Caldas","age":20,"state":"Brasil","dependent":[{"name":"Caldas","age":21,"state":"Brazil","languages":"trsd"}]}
+ 
+
+Now we have the JSON person in Object : {
+  name: 'Felipe Caldas',
+  age: 20,
+  state: 'Brasil',
+  dependent: [ { name: 'Caldas', age: 21, state: 'Brazil', languages: 'trsd' } ]
+ ```
